@@ -15,8 +15,12 @@ const myRandomNumber = getRandomNumber(100);
 console.log(`Mi número aleatorio es ${myRandomNumber}`);
 
 
-let numberTries = tries.innerHTML;
-let validNumberTries = parseInt(numberTries);
+let tryNumber = 0;
+
+function allFunctions() {
+    isThisTheNumber();
+    triesCounter();
+}
 
 const isThisTheNumber = function () {
     const number = input.value;
@@ -24,22 +28,23 @@ const isThisTheNumber = function () {
 
     if (validNumber === myRandomNumber) {
         phrase.innerHTML = "¡HAS GANADO, CAMPEONA!";
-        validNumberTries = `${validNumberTries + 1}`;
     }
     if (validNumber > myRandomNumber) {
         phrase.innerHTML = "Demasiado alto"
-        let counter = tries + 1;
     }
     if (validNumber < myRandomNumber) {
         phrase.innerHTML = "Demasiado bajo"
-        let counter = tries + 1;
     }
     if (validNumber < 0 || validNumber > 100) {
         phrase.innerHTML = "Tiene que ser entre 0 y 100"
-        let counter = tries + 1;
     }
+}
+function triesCounter() {
+    tryNumber = tryNumber + 1;
+    return tries.innerHTML = `${tryNumber}`
+
 }
 
 
-button.addEventListener("click", isThisTheNumber)
+button.addEventListener("click", allFunctions)
 
