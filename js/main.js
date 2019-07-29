@@ -15,7 +15,8 @@ const myRandomNumber = getRandomNumber(100);
 console.log(`Mi número aleatorio es ${myRandomNumber}`);
 
 
-let tryNumber = 0;
+
+let tryNumber = parseInt(tries.innerHTML);
 
 function allFunctions() {
     isThisTheNumber();
@@ -41,7 +42,7 @@ const isThisTheNumber = function () {
 }
 function triesCounter() {
     tryNumber = tryNumber + 1;
-    return tries.innerHTML = `${tryNumber}`
+    return tries.innerHTML = `${tryNumber}`;
 
 }
 
