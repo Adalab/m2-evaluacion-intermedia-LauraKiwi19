@@ -15,16 +15,16 @@ const myRandomNumber = getRandomNumber(100);
 console.log(`Mi número aleatorio es ${myRandomNumber}`);
 
 
-
+let numberTries = tries.innerHTML;
+let validNumberTries = parseInt(numberTries);
 
 const isThisTheNumber = function () {
     const number = input.value;
     const validNumber = parseInt(number);
-    const numberTries = tries.HTML;
-    let validNumberTries = parseInt(numberTries);
+
     if (validNumber === myRandomNumber) {
         phrase.innerHTML = "¡HAS GANADO, CAMPEONA!";
-        let validNumberTries = `${validNumberTries + 1}`;
+        validNumberTries = `${validNumberTries + 1}`;
     }
     if (validNumber > myRandomNumber) {
         phrase.innerHTML = "Demasiado alto"

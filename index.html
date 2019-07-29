@@ -10,16 +10,20 @@
 </head>
 
 <body>
-    <div>
-        <h1>Adivina el número</h1>
-        <h3>Introduce aquí tu número</h3>
-        <h2 class="js-triesNumber">0</h2>
+    <div class="container">
+        <div class="titlecontainer">
+            <h1 class="guess_number">Adivina el número</h1>
+            <h2 class=" tries_number js-triesNumber">0</h2>
+        </div>
+
+        <h3 class="introduce_number">Introduce aquí tu número</h3>
+
         <form>
-            <input class="js-inputNumber" type="number">
+            <input class=" input js-inputNumber" type="number">
         </form>
-        <button class="js-buttonTry">Prueba</button>
-        <div>
-            <p class="js-phraseSolution">Escribe un número y dale a Prueba</p>
+        <button class=" button js-buttonTry">Prueba</button>
+        <div class="phrase_container">
+            <p class=" paragraph js-phraseSolution">Escribe un número y dale a Prueba</p>
         </div>
     </div>
     <script type="text/javascript" src="./js/main.js"></script>
