@@ -15,13 +15,14 @@
             <h1 class="guess_number">Adivina el número</h1>
             <h2 class=" tries_number js-triesNumber">0</h2>
         </div>
-
         <h3 class="introduce_number">Introduce aquí tu número</h3>
 
         <form>
-            <input class=" input js-inputNumber" type="number">
+            <label for="guess_number"></label>
+            <input class=" input js-inputNumber" id="guess_number" placeholder="Prueba un número" type="number">
+            <button class=" button js-buttonTry">Prueba</button>
         </form>
-        <button class=" button js-buttonTry">Prueba</button>
+
         <div class="phrase_container">
             <p class=" paragraph js-phraseSolution">Escribe un número y dale a Prueba</p>
         </div>
